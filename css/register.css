@@ -1,0 +1,169 @@
+#main1{
+	height: 1070px;
+	width: 1010px;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 0 5px gray;
+	padding: 35px;
+}
+#top{
+	width: 606px;
+	height: auto;
+	margin: 0 auto;
+}
+#top h1{
+	font-size: 32px;
+	font-size: 32px;
+}
+#line{
+	width: 606px;
+	height: 30px;
+	border-bottom: 1px #e5e5e5 solid;	
+}
+#lead{
+	margin-top: 50px;
+	width: 606px;
+	height: 70px;
+}
+#l-1{
+	height: 54px;
+	font-size: 12px;
+    line-height: 18px;
+    color: #333;
+}
+#l-2{
+	font-size: 12px;
+    line-height: 18px;
+    color: red;
+}
+#message{
+	margin-top: 45px;
+	width: 606px;
+	height: 570px;
+}
+#message span{
+	color: red;
+}
+#message p{
+	vertical-align: top;
+	display: inline-block;
+	font-size: 12px;
+    line-height: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+#message label{
+	vertical-align: super;
+}
+#myaccount{
+	margin-bottom: 9px;
+	width: 574px;
+	height: 34px;
+	padding: 3px 14px;
+}
+#mypasswords{
+	margin-bottom: 9px;
+	width: 574px;
+	height: 34px;
+	padding: 3px 14px;
+}
+#re-passwords{
+	margin-bottom: 9px;
+	width: 574px;
+	height: 34px;
+	padding: 3px 14px;
+}
+#ddlCountry{
+	margin-bottom: 9px;
+	width: 606px;
+	height: 40px;
+	padding: 3px 14px;
+}
+#birthYear{
+	margin-bottom: 9px;
+	width: 299px;
+	height: 40px;
+}
+#birthMonth{
+	margin-bottom: 9px;
+	width: 299px;
+	height: 40px;
+}
+#la{
+	display: block;
+	margin-bottom: 9px;
+}
+#auth-code{
+	margin-bottom: 9px;
+	width: 574px;
+	height: 34px;
+	padding: 3px 14px;
+}
+#code-img{
+	width: 606px;
+	height: 30px;
+}
+#code-img-r{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+#reg-bottom{
+	width: 641px;
+	height: 140px;
+	margin: 0 auto;
+}
+#clause1{
+	vertical-align: super;
+}
+#spanLawDescription{
+	display: inline-block;
+	width: 601px;
+	height: 41px;
+	font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+#clause2{
+	vertical-align: middle;
+}
+#join{
+	width: 225px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px #00a8ff solid;
+	background-color: #00a8ff;
+	outline-color: #00a8ff;
+    margin-left: 16px;
+    margin-top: 16px;
+    font-size: 14px;
+    color: white;
+}
+#join:hover{
+	background-color: #008fd9;
+}
+#language-select{
+	z-index: 1;
+	display: none;
+	position: absolute;
+	top: 47px;
+	right: 411px;
+	width: 261px;
+	height: 340px;
+	border: 1px #e5e5e5 solid;
+	overflow: scroll;
+	background-color: white;
+}
+#language-select li{
+	width: 214px;
+	height: 17px;
+	font-size: 13px;
+	padding: 3px 15px;
+	line-height: 17px;
+}
+#language-select li:hover{
+	background-color: #33b9ff;	
+}
+#spanLawDescription a{
+	color: #00a8ff;
+}
