@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/huashuo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/V510UX.css"/>
+		<script src="js/souye.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery1.11.1.js"></script>
+		<script src="js/v510ux.js" type="text/javascript" charset="utf-8"></script>
+		<!--fixed栏的JS代码-->
+		<script type="text/javascript"> 
+			$(function () { 
+			var ie6 = document.all; 
+			var dv = $('#fix-div'), st; 
+			var v510=document.getElementById('v510ux');
+			dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离 
+			$(window).scroll(function () { 
+			st = Math.max(document.body.scrollTop || document.documentElement.scrollTop); 
+			if (st > parseInt(dv.attr('otop'))) { 
+			if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果 
+			dv.css({ position: 'absolute', top: st }); 
+			} 
+			else if (dv.css('position') != 'fixed'){dv.css({ 'position': 'fixed', top: 0 }); v510.style.display='block'}  
+			} else if (dv.css('position') != 'static'){dv.css({ 'position': 'static' }); v510.style.display='none'}  
+			var odark=document.getElementById('drak-shadow');
+			var odiv1=document.getElementById('key-img-d');
+			var odiv2=document.getElementById('cs-t-r');
+			var odiv3=document.getElementById('wifi-img');
+			var odiv4=document.getElementById('progress');
+			var odiv5=document.getElementById('progress1');
+			var odiv6=document.getElementById('screen');
+			var odiv7=document.getElementById('s-img');
+			var b=odiv2.getBoundingClientRect().top;
+			var a=odark.getBoundingClientRect().top;
+			var c=odiv3.getBoundingClientRect().top;
+			var d=odiv6.getBoundingClientRect().top;
+			if(a<400){
+				odark.style.backgroundColor='rgba(0,0,0,0.8)';
+				odiv1.style.opacity=1;
+			}else{
+				odark.style.backgroundColor='rgba(0,0,0,0)';
+				odiv1.style.opacity=0;
+			};
+			if(b<200){
+				odiv2.style.transform='translateX(-40px)';
+				odiv2.style.transform='translateY(50px)';
+			}else{
+				odiv2.style.transform='translateX(0)';
+				odiv2.style.transform='translateY(0)';
+			};
+			if(c<200){
+				odiv3.style.transform='translateX(50px)';
+				odiv3.style.transform='translateY(-30px)';
+				odiv4.style.width='287px';
+				odiv5.style.width='70px';
+			}else{
+				odiv3.style.transform='translateX(0)';
+				odiv3.style.transform='translateY(0)';
+				odiv4.style.width='0';
+				odiv5.style.width='0';
+			};
+			if(d<900){
+				odiv7.style.width='3840px';
+				odiv7.style.height='2129px';
+				odiv7.style.marginLeft='-900px';
+				odiv7.style.marginTop='-200px';
+			};
+			if(d<700){
+				odiv7.style.width='3000px';
+				odiv7.style.height='1663px';
+				odiv7.style.marginLeft='-578px';
+				odiv7.style.marginTop='-230px';
+			};
+			if(d<500){
+				odiv7.style.width='2500px';
+				odiv7.style.height='1386px';
+				odiv7.style.marginLeft='-298px';
+				odiv7.style.marginTop='-226px';
+			};
+			if(d<300){
+				odiv7.style.width='1903px';
+				odiv7.style.height='1055px';
+				odiv7.style.marginLeft=0;
+				odiv7.style.marginTop='-100px';
+			};
+			if(d<100){
+				odiv7.style.width='1141px';
+				odiv7.style.height='633px';
+			};
+			});
+			}); 
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<div id="all">
+			<!--导航-->
+			<div id="header">
+			<div id="inner">
+				<a id="logo" href="#"><img src="img/asus-logo-black.png"/></a>
+				<div id="bar">
+					<ul>
+						<li class="h-l">
+							<a href="#">个人及家用产品</a>
+							<div id="var">
+								<ul id="b-u">
+									<li class="v-l"><a class="v-a" href="">智能手机</a>
+										<div id="l-d">
+											<div id="l-m">
+												<span id="m-s">
+													笔记本电脑
+												</span><br />
+												<a href="">ZENBOOK/U系列</a><br />
+												<a href="">游戏系列</a><br />
+												<a href="">N系列</a><br />
+												<a href="">飞行堡垒系列</a><br />
+												<a href="">A/K系列</a><br />
+												<a href="">X系列</a><br />
+												<a href="">E系列</a><br />
+												<a href="">D系列</a><br />
+												<a href="">W系列</a><br />
+												<a href="">V/VM系列</a><br />
+												<a href="">F/R系列</a><br />
+												<span id="m-s-1">
+													变形本
+												</span><br />
+												<a href="">Transformer Book 系列(可拆卸底座)</a>
+												<a href="">Transformer Book 系列(可翻转屏幕)</a>
+												<span id="m-s-1">
+													笔记本电脑配件
+												</span><br />
+												<a href="">底座</a>
+											</div><div id="l-r">
+												<img src="img/78.png"/>
+												<div id="r-b">
+													<span id="m-s-2">
+														ASUS ZenBook<br />
+														U306UA
+													</span><br />
+													纤美外形，薄然心动<br />
+													<a href="">了解更多</a>
+												</div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">笔记本电脑及变形本</a>
+										<div id="l-d">
+											<div id="l-m">
+												<span id="m-s">
+													笔记本电脑
+												</span><br />
+												<a href="">ZENBOOK/U系列</a><br />
+												<a href="">游戏系列</a><br />
+												<a href="">N系列</a><br />
+												<a href="">飞行堡垒系列</a><br />
+												<a href="">A/K系列</a><br />
+												<a href="">X系列</a><br />
+												<a href="">E系列</a><br />
+												<a href="">D系列</a><br />
+												<a href="">W系列</a><br />
+												<a href="productlist.html">V/VM系列</a><br />
+												<a href="">F/R系列</a><br />
+												<span id="m-s-1">
+													变形本
+												</span><br />
+												<a href="">Transformer Book 系列(可拆卸底座)</a>
+												<a href="">Transformer Book 系列(可翻转屏幕)</a>
+												<span id="m-s-1">
+													笔记本电脑配件
+												</span><br />
+												<a href="">底座</a>
+											</div><div id="l-r">
+												<img src="img/78.png"/>
+												<div id="r-b">
+													<span id="m-s-2">
+														ASUS ZenBook<br />
+														U306UA
+													</span><br />
+													纤美外形，薄然心动<br />
+													<a href="">了解更多</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">平板电脑</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">主板</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">显卡</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">智能配戴</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">台式电脑及一体电脑</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">液晶显示器</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">网络产品</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">多媒体产品</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">车载产品</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">周边配件</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+									<li class="v-l"><a class="v-a" href="">游戏设备</a>
+										<div id="l-d">
+											<div id="l-m"></div><div id="l-r"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="h-l">
+							<a href="#">热门活动</a>
+							<div id="var1">
+								<div id="v1">
+									<div id="img1">
+										<a href=""><div id="sh-img1"></div></a>
+									</div>
+									<div id="img1-a">
+										<a href="">庆双旦 华硕板卡放大招</a>
+									</div>
+									<div id="v1-l">
+										<a href=""><div id="sh-v1-l"></div></a>
+									</div>
+									<div id="v1-r">
+										<a href=""><div id="sh-v1-r"></div></a>
+									</div>
+									<div id="v1-a">
+									<a href="">缤纷圣诞，好礼不停</a>
+									<a id="v1-a-2" href="">《求装机！大师》第二期</a>
+									</div>
+								</div>
+								<div id="v2">
+									<div id="v2-1">
+										<a href=""><div id="sh-v2-1"></div></a>
+									</div>
+									<div id="v2-2">
+										<a href=""><div id="sh-v2-2"></div></a>
+									</div>
+									<div id="v2-a">
+										<a class="v2-a-1" href="">点燃激情，只为超越</a>
+										<a id="v1-a-2" href="">心动灵耀</a>
+									</div>
+									<div id="v2-3">
+										<a href=""><div id="sh-v2-3"></div></a>
+									</div>
+									<div id="v2-4">
+										<a href=""><div id="sh-v2-4"></div></a>
+									</div>
+									<div id="v2-a">
+										<a class="v2-a-1" href="">ROG Claymore 震撼上市</a>
+										<a id="v1-a-2" href="">hello.小优</a>
+									</div>
+									<div id="v2-5">
+										<a href=""><div id="sh-v2-5"></div></a>
+									</div>
+									<div id="v2-6">
+										<a href=""><div id="sh-v2-6"></div></a>
+									</div>
+									<div id="v2-a">
+										<a class="v2-a-1" href="">性能巨兽</a>
+										<a id="v1-a-2" href="">热血游戏主义</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="h-l">
+							<a href="#">商用产品</a>
+							<div id="var2">
+								<ul>
+									<li><a class="l-a" href="">产品</a>
+											<div id="var2-h">
+												<div id="all-a">
+													<a href="">笔记本电脑</a><br />
+													<a href="">服务器与超算</a><br />
+													<a href="">台式电脑</a><br />
+													<a href="">一体电脑</a><br />
+													<a href="">液晶显示器</a><br />
+													<a href="">投影仪</a><br />
+													<a href="">数位看板</a><br />
+													<a href="">网络产品</a>
+												</div>
+											</div>
+										</li>
+									<li><a class="l-a" href="">企业规划</a>
+										<div id="var2-h">
+												<div id="all-a">
+													<a href="">笔记本电脑</a><br />
+													<a href="">服务器与超算</a><br />
+													<a href="">台式电脑</a><br />
+													<a href="">一体电脑</a><br />
+													<a href="">液晶显示器</a><br />
+													<a href="">投影仪</a><br />
+													<a href="">数位看板</a><br />
+													<a href="">网络产品</a>
+												</div>
+											</div>
+									</li>
+									<li><a class="l-a" href="">解决方案</a>
+										<div id="var2-h">
+												<div id="all-a">
+													<a href="">笔记本电脑</a><br />
+													<a href="">服务器与超算</a><br />
+													<a href="">台式电脑</a><br />
+													<a href="">一体电脑</a><br />
+													<a href="">液晶显示器</a><br />
+													<a href="">投影仪</a><br />
+													<a href="">数位看板</a><br />
+													<a href="">网络产品</a>
+												</div>
+											</div>
+									</li>
+									<li><a class="l-a" href="">行业应用</a>
+										<div id="var2-h">
+												<div id="all-a">
+													<a href="">笔记本电脑</a><br />
+													<a href="">服务器与超算</a><br />
+													<a href="">台式电脑</a><br />
+													<a href="">一体电脑</a><br />
+													<a href="">液晶显示器</a><br />
+													<a href="">投影仪</a><br />
+													<a href="">数位看板</a><br />
+													<a href="">网络产品</a>
+												</div>
+											</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="h-l">
+							<a href="#">服务支持</a>
+							<div id="var3">
+								<ul>
+									<li><a class="l-a" href="">服务与支持</a></li>
+									<li><a class="l-a" href="">玩家国度社区论坛</a></li>
+									<li><a class="l-a" href="">ZenTalk 硕粉俱乐部</a></li>
+									<li><a class="l-a" href="">ZenCare</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="h-l"><a href="#">华硕官方商城</a></li>
+					</ul>
+				</div>
+				<div id="search">
+					<ul id="log">
+						<li><a href="log.html">登录</a></li>
+					</ul>
+					<form action="" method="post">
+						<input type="text" name="sousuo" id="sousuo" value="" />
+						<input id="s-botton" type="image" src="img/icon-search.png"/>
+					</form>
+				</div>
+			</div>
+			</div>
+			<!--fixed栏-->
+			<div id="fix-div">
+				<div id="nar-row">
+					<span id="v510ux">
+						V510UX
+					</span>
+					<ul>
+						<li><a href="">产品概述</a></li>
+						<li><a href="">产品规格</a></li>
+						<li><a href="">服务与支持</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="nar-b">
+				<span id="v510ux-1">
+						V510UX
+				</span>
+				<span id="nar-b-l">
+					ASUS 推荐使用Windows.
+				</span>
+			</div>
+			<div id="kv-main">
+				<img src="img/prd-logo.png"/>
+				<div class="slogan">匠心工艺打造纤薄外形</div>
+			</div>
+			<div id="text1">
+				V510UX拥有出众的材质、细致的工艺及高性能组件，造就出色的典雅风格及强大性<br />
+				能。V510UX采用了金属同心圆发丝纹上盖设计，与禅学精神相互呼应，进一步强化<br />
+				整体造型，增添细腻质感。V510UX薄约19.9mm，轻约2kg，配以15.6英寸(≈39.6cm)<br />
+				FHD显示屏，第6代英特尔® 酷睿™ 处理器，以及游戏级显卡，疾速存储设备，协助<br />
+				您完成苛刻的处理工作，令繁重困难的工作在顷刻间变得轻松简单，提升您的娱乐<br />
+				体验与工作效率。V510UX不仅是一款功能强大的笔记本电脑，更是一件做工出色的<br />
+				艺术品。
+			</div>
+			<div id="img-elegant">
+				<div class="subT">时尚、典雅</div>
+				<div id="text2">
+					V510UX笔记本采用精湛工艺打造纤薄外型，薄约19.9mm，轻约2kg，对于需要高性能与移动办公的用<br />
+					户来说，是上佳的选择。全金属打造的时尚机身，配合CNC一体成型工艺，轻薄典雅。华硕V510UX不<br />
+					仅拥有坚固耐用的品质，还融入了同心圆拉发丝纹工艺，更加柔和，并且也不易留下指纹的沾染，于<br />
+					细节处彰显奢华品质，让人观之而觉怦然心动。
+				</div>
+			</div>
+			<!--整体性能-->
+			<div class="box-sort">性能</div>
+			<div class="subT">强悍性能</div>
+			<div id="text3">
+				V510UX并非虚有其表。每个部件都精心挑选，以展现出色的性能。支持高性能第6代英特尔® 酷睿™<br />
+				处理器，可支持16GB DDR4 2133MHz的内存容量及NVIDIA® GeForce® GTX™ 950M 显卡，提供强劲的<br />
+				性能；通过双频 802.11ac Wi-Fi 与 Bluetooth 4.1 技术，以更快的速度连接外部世界，并藉由<br />
+				USB Type-C正反插接口提供高速的连接能力，轻松连接到高性能外设。同时，配备HDMI接口，可连接<br />
+				显示器，TV或投影机等设备。多任务处理、顺畅影片播放，疾速启动应用程序，专业的你值得拥有更<br />
+				好的一切。V510UX也具备节能功能，这意味着更少的充电次数!
+			</div>
+			<div class="box-word-cent">WINDOWS 10 家庭版 </div>
+			<div id="b-w">
+				<div id="b-w-1">
+					<span class="icon-up">高达</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-unit">英特尔酷睿</span>
+					<span class="icon-number"> i7</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">CPU（选配）</span>
+				</div>
+				<div id="b-w-2">
+					<span class="icon-up">高达</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-unit">GTX</span>
+					<span class="icon-number">950M</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">NVIDIA GPU</span>
+				</div>
+				<div id="b-w-3">
+					<span class="icon-up">高达 </span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-number">16</span>
+					<span class="icon-unit">GB</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">DDR4 RAM</span>
+				</div>
+				<div id="b-w-4">
+					<span class="icon-up">快至</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-number">2133</span>
+					<span class="icon-unit">MHz</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">RAM</span>
+				</div>
+			</div>
+			<div id="b-m"></div>
+			<div id="graphics-card">
+				<div id="gr-i">
+					<div class="subT">震撼显卡.</div>
+					<span class="separate"></span>
+					<div class="txt-left">
+						唯有强大的图形能力才能与V510UX相<br />
+						匹配，因此我们选择了惊艳的<br />
+						NVIDIA® GeForce® GTX™ 950M游戏显<br />
+						卡，给您带来流畅的游戏性能与高清<br />
+						影片播放。
+					</div>
+				</div>
+			</div>
+			<div id="back-color">
+				<div id="interval"></div>
+				<div class="box-sort">显示屏</div>
+				<div class="subT">巨细靡遗 大器呈现.</div>
+				<div id="screen">
+					<img id="s-img" src="img/img-detail.jpg"/>
+				</div>
+				<div id="screen-b">
+					<div id="s-b-t">
+						<div id="s-b-t-l">
+							<span class="icon-up">高达</span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-number">3840X2160</span>
+							<span class="icon-unit"> </span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info">4K UHD分辨率</span>
+						</div>
+						<div id="s-b-t-r">
+							<span class="icon-up"> </span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-number">282</span>
+							<span class="icon-unit">ppi</span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info"> </span>
+						</div>
+					</div>
+					<div id="text4">
+						V510UX搭载15.6英寸(≈39.6cm)的显示屏(选配)，无论是阅读文本，观赏照片或是欣赏影片，都能为<br />
+						您献上舒适的视觉体验。屏幕每英寸具备惊人的 282 像素，即便是相片的优质细节及影片中细小的<br />
+						文字，也依然清晰可见。
+					</div>
+				</div>
+			</div>
+			<div id="interval"></div>
+			<!--色彩-->
+			<div class="subT">多种色彩，栩栩如生。</div>
+			<div id="text5">
+				V510UX的显示屏采用 72% NTSC、sRGB全覆盖及74% Adobe RGB色域。简单来说，这代表相较于普通标<br />
+				准屏幕，该屏幕能呈现更详尽、更逼真且更生动的色彩。IPS技术可维持 178 度广视角内的对比度与<br />
+				色彩重现程度，更结合原厂校正的色温，展现一致色彩效果。V510UX为笔记本电脑显示屏树立一套新<br />
+				标准。
+			</div>
+			<div id="ips">
+				<div id="ips-l">
+					<span class="icon-up"> </span>
+					<span class="icon-number">72</span>
+					<span class="icon-unit">%</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">NTSC</span>
+				</div>
+				<div id="ips-m">
+					<span class="icon-up">  </span>
+					<span class="icon-number">100</span>
+					<span class="icon-unit">%</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">sRGB</span>
+				</div>
+				<div id="ips-r">
+					<span class="icon-up">   </span>
+					<span class="icon-number deg">178°</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info">广视角 </span>
+				</div>
+			</div>
+			<div id="img-color"></div>
+			<div id="splendid">
+				<img src="img/icon-splendid.png"/>
+			</div>
+			<span class="icon-up">  </span>
+			<div class="subT">华硕Splendid智能靓彩技术:<br />
+			优化色彩.
+			</div>
+			<span class="icon-up"></span>
+			<div id="text6">
+				为确保获得上佳的画面，V510UX整合了华硕Splendid智能靓彩技术提供您更丰富、更清晰、更准确的<br />
+				色彩。<br />
+				<br/>
+				华硕Splendid 具备四种一键式默认模式： 普通模式、Eye Care模式、鲜明模式和手动模式。普通模<br />
+				式提供原厂优化设定，Eye Care模式减少蓝光，提供舒适的检视环境，鲜明模式可智能调整显示设<br />
+				置，让影像看起来生动鲜明。通过手动模式，即可控制色温设定，让您按照个人需求和偏好，调整显<br />
+				示器。依默认，华硕 Splendid 采用尽可能显示准确色彩的设定，提供上佳浏览体验。但我们发现有<br />
+				时候可能需要改变一下 - 例如让您的相片或影片出现给人眼睛一亮的效果。因此，除了标准的普通模<br />
+				式外，我们又新增了其他三种可选模式：护眼、鲜明和手动。
+			</div>
+			<div id="sp-d">
+				<a id="sp-a" href="">进一步了解华硕Splendid智能靓彩技术d ></a>
+			</div>
+			<div id="sp-d2">
+				<div class="sp1">
+					<span class="sp-s">
+						普通模式
+					</span>
+					<div class="sp-img1">
+						<div class="shadow4">
+							<div class="signs">
+								<img src="img/icon-normal.png"/>
+							</div>
+							<div class="line">
+								
+							</div>
+							<div class="title">
+								普通模式
+							</div>
+							<div class="discript">
+								华硕Splendid默认模式，适用于所有日常运算<br />
+								工作。呈现准确且栩栩如生的色彩与色调，提<br />
+								供仔细优化的原厂设定。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp1">
+					<span class="sp-s">
+						Eye Care模式
+					</span>
+					<div class="sp-img2">
+						<div class="shadow4">
+							<div class="signs">
+								<img src="img/icon-eyecare.png"/>
+							</div>
+							<div class="line">
+								
+							</div>
+							<div class="title">
+								护眼模式
+							</div>
+							<div class="discript">
+								长时间接受过量蓝光，可能会使眼睛疲劳。华<br />
+								硕Splendid的Eye Care模式可减少蓝光，提供<br />
+								更加舒适的检视体验，而且色彩依然鲜明。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp1">
+					<span class="sp-s">
+						鲜明模式
+					</span>
+					<div class="sp-img3">
+						<div class="shadow4">
+							<div class="signs">
+								<img src="img/icon-vivid.png"/>
+							</div>
+							<div class="line">
+								
+							</div>
+							<div class="title">
+								鲜明模式
+							</div>
+							<div class="discript">
+								若想让影像出现给人眼睛一亮的效果，华硕<br />
+								Splendid的鲜明模式是上佳选择。采用专有技<br />
+								术，逐一提高每个像素的色彩<br />
+								饱和度，让色彩显得生动鲜明。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sp1">
+					<span class="sp-s">
+						手动模式
+					</span>
+					<div class="sp-img4">
+						<div class="shadow4">
+							<div class="signs">
+								<img src="img/icon-manial.png"/>
+							</div>
+							<div class="line">
+								
+							</div>
+							<div class="title">
+								手动模式
+							</div>
+							<div class="discript">
+								我们在华硕Splendid新增了手动模式，方便您<br />
+								按照个人需求和偏好，调整显示器的色温。简<br />
+								单操作滑杆，就能增加或减少原厂套用值，以<br />
+								符合个人品味。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="interval"></div>
+			<!--护眼-->
+			<div id="eye">
+				<img src="img/icon-eyecare-big.png"/>
+				<span class="icon-up"></span>
+				<div class="subT">华硕Eye Care保护您的灵魂之窗</div>
+				<div id="text7">
+					大多数 LED 面板都会散发蓝光，危害眼睛的健康。华硕Eye Care模式能有效过滤高达30%的蓝光，让<br />
+					您安心舒适享受阅读，远离潜在的眼睛疲劳。
+				</div>
+				<span class="icon-up"></span>
+				<a id="sp-a" href="">进一步了解Eye Care功能></a>
+			</div>	
+			<div id="eye-imgarea">
+					<div id="eye-img">
+						<div id="screen-img">
+							<div id="screen-shadow">
+								
+							</div>
+						</div>
+					</div>
+					<div id="Eye-care-off">
+							Eye Care 模式 <br />
+							/ 开启
+					</div>
+					<div id="Eye-care-on">
+							Eye Care 模式 <br />
+							/ 关闭
+					</div>
+				</div>
+			<div id="interval"></div>
+			<!--硬盘存储-->
+			<div id="storage">
+				<div id="st-l">
+					<div class="subT">先进的存储容量.</div>
+					<div id="text8">
+						V510UX选用高速的存储硬件，支持1TB 的硬盘，可快速启动应用<br />
+						程序，轻松坐享出色的运算体验。大型文件与文档可在弹指之间<br />
+						存储或加载完毕。
+					</div>
+					<span class="icon-up">  </span>
+					<span class="icon-number">1</span>
+					<span class="icon-unit">TB</span>
+					<span class="icon-info">HDD</span>
+					<span class="icon-up"></span>
+				</div>
+				<div id="st-img">
+					<img src="img/img-storage.jpg"/>
+				</div>
+			</div>
+			<div id="interval"></div>
+			<div id="connectspeed">
+				<div id="interval"></div>
+				<div id="cs-t">
+					<div id="cs-t-l">
+						<div class="subT">疾速连接</div>
+						<div id="text9">
+						V510UX 配备USB Type-C正反插接口，让您首<br />
+						次就能准确插对接口，接口正亦是反，改善<br />
+						 USB 插不准难题。理论上USB Type-C接口的数<br />
+						 据传输速度为USB 2.0的十倍。<br />
+						 <br />
+						此外，V510UX配备两个USB 3.0接口，一个<br />
+						HDMI接口和一个SD卡槽，因此，您可以轻松<br />
+						连接各种外设，显示器及投影机。
+						</div>
+						<div class="cs-1">
+							<span class="icon-number"><img src="img/icon-hdmi.png" alt=""></span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info">HDMI</span>
+						</div>
+						<div class="cs-1">
+							<span class="icon-number"><img src="img/icon-usb2.png" alt=""></span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info">USB 2.0</span>
+						</div>
+						<div class="cs-1">
+							<span class="icon-number"><img src="img/icon-usb3.png" alt=""></span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info">USB 3.0</span>
+						</div>
+						<div class="cs-1">
+							<span class="icon-number"><img src="img/icon-typec.png" alt=""></span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info">TYPE C</span>
+						</div>
+						<div class="cs-1">
+							<span class="icon-number"><img src="img/icon-sdcard.png" alt=""></span>
+							<span class="separate-icon-info"></span>
+							<span class="icon-info">SD 卡</span>
+						</div>
+					</div>
+					<div id="cs-t-r">
+						<img src="img/img-connectivity.png"/>
+					</div>
+				</div>
+				<div id="wifi">
+					<div id="wifi-img">
+						<img src="img/img-wifi.png"/>
+					</div>
+					<div id="wifi-r">
+						<div class="subT" id="subT1">疾速 <br />
+						802.11ac Wi-Fi无线<br />
+						网络
+					</div>
+					<div id="text10">
+						V510UX搭载802.11ac Wi-Fi 无线功能，速度为<br />
+						802.11 b/g/n的2.8倍，让您更快速地进行无线<br />
+						连接。此外，可通过蓝牙® 4.1 技术连接到您<br />
+						爱用的设备，电池续航力不受影响。V510UX让<br />
+						您随心所欲尽情发挥！ 
+					</div>
+					<span class="icon-up">  </span>
+					<span class="icon-up">快出</span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-number">2.8</span>
+					<span class="icon-unit">倍</span>
+					<span class="separate-icon-info"></span>
+					<span class="separate-icon-info"></span>
+					<span class="separate-icon-info"></span>
+					<span class="icon-info"></span>
+					<div id="wifi-b">
+						<div id="wifi-b-1">
+						<div class="number">802.11ac</div>
+						<div id="progress"></div>
+						<div id="circle"></div>
+						<div class="multiple">快出2.8倍</div>
+						</div>
+						<div id="wifi-b-2">
+						<div class="number">802.11b/g/n</div>
+						<div id="progress1"></div>
+						<div id="circle1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="interval"></div>
+			</div>
+			<div id="interval"></div>
+			<!--键盘及输入-->
+			<div class="box-sort">输入</div>
+			<div class="subT">舒适的背光键盘.</div>
+			<div id="text11">
+			V510UX运用稳固的全尺寸背光键盘提供舒适的输入体验。键盘采用1.6mm长键程设计，长时间使用也<br />
+			不疲劳。此外，无论您在何地使用，即使是弱光环境下，背光功能也让您能清楚看见每个按键。
+			</div>
+			<div id="key">
+				<img src="img/key.png"/>
+			</div>
+			<div id="key-r">
+				<span class="separate-icon-info"></span>
+				<span class="icon-number">1.6</span>
+				<span class="icon-unit">mm</span>
+				<span class="separate-icon-info"></span>
+				<span class="icon-info" id="icon-info1">键程 </span>
+			</div>
+			<div id="dark-key">
+				<div id="key-img-b"></div>
+				<div id="drak-shadow">
+					<div id="key-img-d">
+						<img src="img/img-keyboard-backlight.png"/>
+					</div>
+				</div>
+			</div>
+			<span class="icon-up">  </span>
+			<div class="subT">触控.</div>
+			<div id="text12">
+				V510UX的设计带来更直观的触控体验。触控板采用智能手机触控屏幕生产所用的专有技术，创造高灵<br />
+				敏度表面，带来快速的响应与出色的准确度。触控板也整合了先进的指纹传感器，提供快速、直观、<br />
+				安全的登入体验*。作为V510UX，不但美观时尚，还低调利用了钻石切割边缘凸显其优雅的设计。
+			</div>
+			<div id="interval"></div>
+			<!--音乐-->
+			<div id="music">
+				<div class="box-sort">音效</div>
+				<div class="subT">华硕SonicMaster美声大师音效技术:<br />打造震撼音质.</div>
+				<div id="text13">
+					扣人心弦的音效始终是 V510UX的一大特色。由华硕金耳朵团队与哈曼卡顿共同研发的华硕<br />
+					SonicMaster美声大师音效技术，运用高品质的硬件及智能设计的软件组合，呈现丰富的低音及清晰<br />
+					的人声，带来震撼的音效体验。
+				</div>
+				<span class="icon-up">  </span>
+				<a href="" id="sp-a">进一步了解华硕SonicMaster美声大师音效技术</a>
+				<span class="icon-up">  </span>
+			</div>
+			<div id="music-img">
+				<div id="pics">
+					<img src="img/sonic_01.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_02.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_03.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_04.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_05.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_06.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_07.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_08.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_09.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_10.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_11.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_12.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_13.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_14.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_15.jpg"/>
+				</div>
+				<div id="pics">
+					<img src="img/sonic_16.jpg"/>
+				</div>
+				<div id="sound">
+					<img src="img/img-sound.png"/>
+				</div>
+			</div>
+			<div id="interval"></div>
+			<div id="interval"></div>
+			<div id="product">
+				<span class="icon-up">  </span>
+				<div id="p-l">
+					赛扬、Celeron Inside、迅驰、Centrino Inside、迅驰标识、Core Inside、英特尔、英<br />特尔标识、英特尔酷睿、Intel Inside，Intel Inside标识、英特尔欢跃、英特尔博锐、安<br />腾、Itanium Inside、奔腾、Pentium Inside、Viiv Inside、vPro Inside、至强和Xeon<br />Inside均是英特尔公司在美国或其他国家的商标。
+				</div>
+				<div id="p-r">
+					<img src="img/C95uEpFbTqPqgocG.jpg" style="margin-left: -24px;"/>
+					<span class="icon-up">  </span>
+					<ul id="p-u">
+    		 			<li>产品规格可能会依国家地区而有所变动，我们诚挚的建议您与当地的经销商或零售商确认目前销售产品的规格。</li>
+     					<li>产品颜色可能会因拍照光线误差或屏幕设定而与实际产品有所差异。</li>
+     					<li>我们会尽力提供正确与完整的数据到网页上，并保留更动、修正页面信息的权利，恕不另行通知。</li>
+     					<li>本网站所提到的产品规格及信息仅提供参考，内容会随时更新，请咨询当地经销商了解详情。</li>
+     					<li>PCB板与附赠软件可能不定期更新，请咨询当地经销商了解详情。</li>
+     					<li>文中涉及的其它名称及商标属于各自的所有者。</li>
+     					<li>以上所有图片仅供参考，请以实物为准，内容会随地区而有所变动，请咨询当地经销商了解详情</li>
+					</ul>
+				</div>
+			</div>
+			<!--尾部-->
+			<div id="footer">
+				<div id="f-t">
+					<div class="extend">
+						<h4 id="f-s">探索更多</h4>
+						</span><br />
+						<a href="">玩家国度官方旗舰店</a><br />
+						<a href="">华硕官方商城</a><br />
+						<a href="">华硕商用产品授权店</a><br />
+						<a href="">华硕合伙人</a><br />
+						<a href="">华硕体验店</a><br />
+						<a href="">华硕天猫旗舰店</a><br />
+						<a href="">华硕天天猫手机旗舰店</a><br />
+						<a href="">热门活动</a><br />
+						<a href="">云端服务</a><br />
+						<a href="">ASUS HealthCare</a>
+					</div>
+					<div class="extend">
+						<h4 id="f-s">关于我们</h4>
+						</span><br />
+						<a href="">奖项</a><br />
+						<a href="">新闻中心</a><br />
+						<a href="">关于华硕</a><br />
+						<a href="">热门活动</a><br />
+						<a href="">人才招聘</a><br />
+						<a href="">财务咨询</a><br />
+						<a href="">绿色华硕</a><br />
+						<a href="">友情链接</a><br />
+						<a href="">经销商专区</a><br />
+						<a href="">供应商专区</a>
+						<a href="">企业社会责任</a>
+					</div>
+					<div class="extend">
+						<h4 id="f-s">服务支持</h4>
+						</span><br />
+						<a href="">华硕会员专区</a><br />
+						<a href="">华硕授权实体门店查询</a><br />
+						<a href="">华硕服务中心查询</a><br />
+						<a href="">系统类网络授权经销商</a><br />
+						<a href="">配件类网络授权经销商</a><br />
+					</div>
+					<div class="extend">
+						<h4 id="f-s">社区</h4>
+						</span><br />
+						<div id="btn">
+							<a href=""><img src="img/183_n.png"/></a>
+							<a href=""><img src="img/184_n.png"/></a>
+							<a href=""><img src="img/230_n.png"/></a>
+						</div>
+						<a href="">华硕ROG玩家国度官方视频站</a><br />
+						<a href="">玩家国度社区论坛</a><br />
+						<a href="">ZenTalk 硕粉俱乐部</a><br />
+						<a href="">ZenCare</a><br />
+						<a href="">ZenFone吧</a><br />
+						<a href="">华硕智能手机微博</a><br />
+					</div>
+				</div>
+				<div id="f-m">
+					<div id="language">
+						<img src="img/global_icon.png"/>
+						<a href="">China/简体中文</a>
+					</div>
+					<div id="m-r">
+						<a href="">隐私权保护政策</a>|
+						<a href="">使用条款</a>|
+						<a href="">沪ICP备11025349号-3</a>|
+						©ASUSTeK Computer Inc. All rights reserved.
+					</div>
+				</div>
+				<div id="f-b">
+					<img src="img/cnnic.png"/>
+				</div>
+			</div>
+			<a id="totop" href="#header"><img src="img/icn-arrow.png"/></a>
+			<a id="service" href=""><img src="img/下载.png"/>华硕在线即时咨询</a>
+		</div>
+	</body>
+</html>
